@@ -6,6 +6,30 @@ body {
   font-size: 1.6rem;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-style: normal;
+  font-weight: 400;
+}
+
+/**************************************************************common */
+.section-heading {
+  color: #201830;
+  font-size: 4.2rem;
+  font-weight: 700;
+  line-height: 1.24;
+}
+
+.desc {
+  color: #665f73;
+  font-size: 1.6rem;
+  line-height: 1.75;
+}
+
+.btn {
+  padding: 17px 25px;
+  color: #fff;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67;
 }
 
 /*# sourceMappingURL=styles.css.map */
