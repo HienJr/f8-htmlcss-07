@@ -23,11 +23,257 @@ body {
     line-height: 1.75;
 }
 
-.btn {
-    padding: 17px 25px;
-    color: #fff;
+.btn-1,
+.btn-2 {
+    display: inline-block;
+    padding: var(--btn-pd-top) var(--btn-pd-left);
+    border-radius: var(--btn-border-radius);
     text-align: center;
+    color: #fff;
+}
+
+.btn-1 {
+    background: #936cdd;
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 1.67;
+}
+
+.btn-2 {
+    background: #201830;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+}
+
+/**************************************************************header */
+.header {
+    --btn-border-radius: 6px;
+    --btn-pd-top: 9px;
+    --btn-pd-left: 29px;
+    padding-top: 42px;
+    background: #fff8f3;
+}
+
+.header-body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+.logo {
+    justify-self: start;
+}
+
+.pc-menu {
+    justify-self: center;
+    display: flex;
+}
+
+.menu__item {
+    padding: 12px;
+}
+
+.menu__item:hover {
+    text-shadow: 0.5px 0 0 #000;
+}
+
+.header-action {
+    justify-self: end;
+    display: flex;
+}
+
+.login-btn {
+    background: transparent;
+    color: #201830;
+}
+
+.login-btn:hover {
+    background: #201830;
+    color: #fff;
+}
+
+.login-btn:hover + .btn-2 {
+    background: transparent;
+    color: #201830;
+}
+/**************************************************************hero */
+.hero {
+    position: relative;
+    padding-top: 110px;
+    background: #fff8f3;
+}
+
+.media-left__img {
+    position: relative;
+}
+
+.media__img {
+    width: 270px;
+    height: 302px;
+    object-fit: cover;
+}
+
+.left__img--decor {
+    position: absolute;
+    left: 50%;
+    bottom: -30px;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 12px;
+    width: 194px;
+    height: 60px;
+    border-radius: 9px;
+    background: #fff;
+    box-shadow: 0px 12px 44px 0px rgba(32, 24, 48, 0.07);
+}
+
+.listener {
+    margin-top: 53px;
+}
+
+.listener-title {
+    color: #201830;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.71;
+}
+
+.listener-list {
+    margin-top: 10px;
+    margin-left: 18px;
+    display: flex;
+}
+
+.listener-avatar {
+    width: 48px;
+    height: 48px;
+    margin-left: -18px;
+}
+
+.social {
+    position: relative;
+    display: inline-block;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    column-gap: 4px;
+    margin-top: 8px;
+    margin-left: 118px;
+    width: 82px;
+    height: 82px;
+    background: #ff9051;
+    border-radius: 50%;
+}
+
+.product-title {
+    color: #fff;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.product-desc {
+    color: #ffefe7;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.social__decor--top,
+.social__decor--bot {
+    position: absolute;
+    width: 45px;
+    height: 36.542px;
+}
+
+.social__decor--top {
+    top: 44.5px;
+    left: 54px;
+}
+
+.social__decor--bot {
+    top: 102px;
+    left: 157px;
+}
+
+.social__app {
+    margin-top: 12px;
+    display: flex;
+    column-gap: 18px;
+}
+
+.hero-media-right {
+    .media__img {
+        margin-top: 68px;
+    }
+}
+
+.hero-body {
+    position: relative;
+}
+
+.hero__heading {
+    margin-top: 18px;
+    width: 470px;
+    color: #201830;
+    font-size: 7rem;
+    font-weight: 700;
+    line-height: 1.14;
+    position: relative;
+    z-index: 1;
+    animation: heading 1 1s;
+}
+
+@keyframes heading {
+    from {
+        margin-left: -250%;
+    }
+}
+
+.heading-decor {
+    position: absolute;
+    top: 138px;
+    left: 33px;
+    z-index: 0;
+    animation: decor 1 1s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes decor {
+    from {
+        margin-top: -100%;
+    }
+}
+
+.hero__desc {
+    margin-top: 20px;
+    width: 470px;
+    color: #665f73;
+    font-size: 1.8rem;
+    line-height: 1.67;
+}
+
+.hero-action {
+    margin-top: 40px;
+    display: flex;
+    --btn-border-radius: 6px;
+    --btn-pd-top: 17px;
+    --btn-pd-left: 27px;
+}
+
+.hero__play-btn {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    color: #201830;
+    background: transparent;
 }

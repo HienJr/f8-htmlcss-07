@@ -14,7 +14,7 @@ $container-max-widths: (
     sm: 540px,
     md: 720px,
     lg: 960px,
-    xl: 1140px,
+    xl: 1170px,
     xxl: 1320px,
 );
 
@@ -35,6 +35,7 @@ $container-max-widths: (
 .row {
     display: flex;
     flex-wrap: wrap;
+    // margin-left: calc(#{-$grid-gutter-width} * 0.5 - 15px);
     margin-left: -$grid-gutter-width * 0.5;
 
     > * {
@@ -82,6 +83,19 @@ $container-max-widths: (
     }
 }
 
+@mixin make-offset($infix) {
+    $gutter-width: $grid-gutter-width * 0.5;
+    @for $i from 0 to $grid-columns {
+        .offsets#{$infix}-#{$i} {
+            margin-left: if(
+                $i > 0,
+                calc(math.div(100%, $grid-columns) * $i + #{$gutter-width}),
+                15px
+            );
+        }
+    }
+}
+
 @each $breakpoint, $dimension in $grid-breakpoints {
     $max-width: map-get($container-max-widths, $breakpoint);
     $is-xs: $breakpoint == "xs";
@@ -93,5 +107,6 @@ $container-max-widths: (
         }
         @include make-row-cols($infix);
         @include make-columns($infix);
+        @include make-offset($infix);
     }
 }
