@@ -15,12 +15,8 @@ $container-max-widths: (
     md: 720px,
     lg: 960px,
     xl: 1170px,
-    xxl: 1320px,
+    xxl: 1170px,
 );
-
-%column-gutter {
-    margin-left: $grid-gutter-width * 0.5;
-}
 
 .container-fluid {
     width: 100%;
@@ -36,10 +32,11 @@ $container-max-widths: (
     display: flex;
     flex-wrap: wrap;
     // margin-left: calc(#{-$grid-gutter-width} * 0.5 - 15px);
-    margin-left: -$grid-gutter-width * 0.5;
+    margin-left: -$grid-gutter-width;
+    margin-right: -$grid-gutter-width;
 
     > * {
-        @extend %column-gutter;
+        padding-left: $grid-gutter-width;
     }
 }
 
@@ -55,7 +52,7 @@ $container-max-widths: (
 @mixin make-media-query($dimension, $bypass: false) {
     @if $bypass {
         .container {
-            padding: 0 18px;
+            @content;
         }
         @content;
     } @else {
