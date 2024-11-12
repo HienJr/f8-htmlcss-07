@@ -106,8 +106,8 @@ body {
 }
 /**************************************************************hero */
 .hero {
-    position: relative;
     padding-top: 110px;
+    padding-bottom: 140px;
     background: #fff8f3;
 }
 
@@ -236,13 +236,6 @@ body {
     line-height: 1.14;
     position: relative;
     z-index: 1;
-    animation: heading 1 1s;
-}
-
-@keyframes heading {
-    from {
-        margin-left: -250%;
-    }
 }
 
 .heading-decor {
@@ -252,13 +245,6 @@ body {
     z-index: 0;
     animation: decor 1 1s;
     animation-delay: 1s;
-    animation-fill-mode: both;
-}
-
-@keyframes decor {
-    from {
-        margin-top: -100%;
-    }
 }
 
 .hero__desc {
@@ -573,3 +559,101 @@ body {
 }
 
 /**************************************************************subscribe */
+.subscribe-body {
+    position: relative;
+    padding: 100px 0;
+    border-radius: 12px;
+    background: #201830;
+    .section-heading {
+        color: #fff;
+    }
+    .desc {
+        margin-top: 10px;
+    }
+}
+.subscribe-decor {
+    position: absolute;
+    &:nth-of-type(1) {
+        left: 35px;
+        bottom: 45px;
+    }
+    &:nth-of-type(2) {
+        top: 26px;
+        left: 528px;
+    }
+    &:nth-of-type(3) {
+        top: 180px;
+        right: 27px;
+    }
+}
+
+.subscribe-form {
+    margin-top: 70px;
+    --btn-border-radius: 8px;
+    --btn-pd-top: 17px;
+    --btn-pd-left: 34px;
+    .btn-1 {
+        border: none;
+    }
+}
+
+.subscribe-input {
+    width: 100%;
+    height: 64px;
+    padding-left: 28px;
+    border-radius: 8px;
+    border: none;
+    background: #2b213f;
+    outline: none;
+    color: #aba6b5;
+    line-height: 1.75;
+}
+/**************************************************************footer */
+.footer {
+    background: #fff8f3;
+    padding: 100px 0 38px;
+    .logo {
+        margin-top: 4px;
+    }
+    .desc {
+        margin-top: 14px;
+        width: 270px;
+    }
+}
+
+.footer-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-social {
+    margin-top: 18px;
+    display: flex;
+    column-gap: 14px;
+}
+
+.footer-list {
+    display: flex;
+    column-gap: 90px;
+    .desc {
+        margin-top: 16px;
+        width: 100%;
+    }
+}
+
+.item-heading {
+    margin-bottom: 24px;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.item-app {
+    display: flex;
+    column-gap: 16px;
+}
+
+.item-app__icon {
+    width: 36px;
+    height: 36px;
+}

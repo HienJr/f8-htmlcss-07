@@ -1,3 +1,35 @@
-
+@media (max-width: 991.98px) {
+  /*common */
+  .show-on-pc {
+    display: none;
+  }
+  .container {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+  .container > * {
+    width: 100%;
+  }
+  .section-heading {
+    font-size: 2.6rem;
+  }
+  .desc,
+  [class*=desc] {
+    font-size: 14px;
+  }
+  /*header */
+  .header {
+    padding-top: 20px;
+  }
+  .header-body {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 992px) {
+  .show-on-mobile {
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=responsive.css.map */

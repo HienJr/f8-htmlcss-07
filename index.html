@@ -35,20 +35,23 @@
     <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 
-<body style="height: 10000px;">
+<body>
     <header class="header">
         <div class="container">
             <div class="header-body">
                 <a href="#!"><img src="./assets/img/Logo.svg" alt="" class="logo"></a>
-                <ul class="pc-menu">
+                <ul class="pc-menu show-on-pc">
                     <li><a href="#!" class="desc menu__item">Episodes</a></li>
                     <li><a href="#!" class="desc menu__item">Trending</a></li>
                     <li><a href="#!" class="desc menu__item">Category</a></li>
                     <li><a href="#!" class="desc menu__item">Blog</a></li>
                 </ul>
-                <div class="header-action">
+                <div class="header-action show-on-pc">
                     <a href="#!" class="btn-2 login-btn">Log in</a>
                     <a href="#!" class="btn-2">Sign up</a>
+                </div>
+                <div class="mobile-menu show-on-mobile">
+                    <img src="./assets/img/mobile-menu-icon.svg" alt="">
                 </div>
             </div>
         </div>
@@ -56,7 +59,7 @@
     <section class="hero">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-sm-6 col-lmd-6">
                     <div class="hero-media-left">
                         <div class="media-left__img">
                             <img src="./assets/img/hero-img-01.png" alt="" class="media__img">
@@ -76,7 +79,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-sm-6">
                     <div class="hero-media-right">
                         <div class="social">
                             <div class="product">
@@ -94,7 +97,7 @@
                         <img src="./assets/img/hero-img-02.png" alt="" class="media__img">
                     </div>
                 </div>
-                <div class="col-lg-5 offsets-lg-1">
+                <div class="col-lg-5 offsets-lg-1 col-sm-12">
                     <div class="hero-body">
                         <h1 class="hero__heading">A new era of podcasting for you</h1>
                         <img src="./assets/img/h1-decor.svg" alt="" class="heading-decor">
@@ -335,11 +338,149 @@
         <section class="subscribe">
             <div class="container">
                 <div class="subscribe-body">
-                    
+                    <div class="row">
+                        <div class="col-lg-5 offsets-lg-1">
+                            <div class="subscribe-title">
+                                <h2 class="section-heading">Subscribe and get update regularly</h2>
+                                <img src="./assets/img/subscribe-heading-decor.svg" alt=""
+                                    class="subscribe-heading__decor">
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <p class="desc">
+                                Rebuilt for simplicity and speed,
+                                so you can spend more time discovering and listening
+                                to great podcasts. Get all the updates of latest podcasts.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="subscribe-form">
+                        <form action="">
+                            <div class="row">
+                                <div class="col-lg-4 offsets-lg-1">
+                                    <input type="text" name="" id="" placeholder="Your name" class="subscribe-input">
+                                </div>
+                                <div class="col-lg-4">
+                                    <input type="email" name="" id="" placeholder="Your email address"
+                                        class="subscribe-input">
+                                </div>
+                                <div class="col">
+                                    <button type="" class="btn-1">Subscribe</button>
+                                    <!-- <input type="button" value="Subscribe" class="btn-1"> -->
+                                </div>
+                        </form>
+                    </div>
+                    <div class="subscribe-decor">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 0L13.6122 10.3878L24 12L13.6122 13.6122L12 24L10.3878 13.6122L0 12L10.3878 10.3878L12 0Z"
+                                fill="#936CDD" />
+                        </svg>
+                    </div>
+                    <div class="subscribe-decor">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 0L13.6122 10.3878L24 12L13.6122 13.6122L12 24L10.3878 13.6122L0 12L10.3878 10.3878L12 0Z"
+                                fill="#5BC18F" />
+                        </svg>
+                    </div>
+                    <div class="subscribe-decor">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 0L13.6122 10.3878L24 12L13.6122 13.6122L12 24L10.3878 13.6122L0 12L10.3878 10.3878L12 0Z"
+                                fill="#FF9051" />
+                        </svg>
+                    </div>
                 </div>
+            </div>
             </div>
         </section>
     </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-body">
+                <div class="footer-contact">
+                    <a href="#!"><img src="./assets/img/Logo.svg" alt="" class="logo"></a>
+                    <p class="desc">Copyright © 2022 UIHUT all rights reserved.</p>
+                    <div class="footer-social">
+                        <img src="./assets/img/facebook-icon.svg" alt="" class="social__item">
+                        <img src="./assets/img/linkedln-icon.svg" alt="" class="social__item">
+                        <img src="./assets/img/twitter-icon.svg" alt="" class="social__item">
+                    </div>
+                </div>
+                <div class="footer-list">
+                    <ul class="list-item">
+                        <li>
+                            <h3 class="item-heading">Linkes</h3>
+                        </li>
+                        <li>
+                            <p class="desc">Home</p>
+                        </li>
+                        <li>
+                            <p class="desc">Episodes</p>
+                        </li>
+                        <li>
+                            <p class="desc">Trending</p>
+                        </li>
+                        <li>
+                            <p class="desc">Category</p>
+                        </li>
+                        <li>
+                            <p class="desc">Blog</p>
+                        </li>
+                    </ul>
+                    <ul class="list-item">
+                        <li>
+                            <h3 class="item-heading">Features</h3>
+                        </li>
+                        <li>
+                            <p class="desc">Style guide</p>
+                        </li>
+                        <li>
+                            <p class="desc">Instructions</p>
+                        </li>
+                        <li>
+                            <p class="desc">Catelog</p>
+                        </li>
+                        <li>
+                            <p class="desc">Your podcast</p>
+                        </li>
+                    </ul>
+                    <ul class="list-item">
+                        <li>
+                            <h3 class="item-heading">Company</h3>
+                        </li>
+                        <li>
+                            <p class="desc">Privacy</p>
+                        </li>
+                        <li>
+                            <p class="desc">Terms</p>
+                        </li>
+                        <li>
+                            <p class="desc">Security</p>
+                        </li>
+                        <li>
+                            <p class="desc">Cookies</p>
+                        </li>
+                    </ul>
+                    <ul class="list-item">
+                        <li>
+                            <h3 class="item-heading">Listen on</h3>
+                        </li>
+                        <li>
+                            <div class="item-app">
+                                <img src="./assets/img/spotify-icon.svg" alt="" class="item-app__icon">
+                                <img src="assets/img/musicplayer-icon.svg" alt="" class="item-app__icon">
+                                <img src="./assets/img/icloud-icon.svg" alt="" class="item-app__icon">
+                                <img src="./assets/img/itunes-icon.svg" alt="" class="item-app__icon">
+                                <img src="assets/img/c-icon.svg" alt="" class="item-app__icon">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
