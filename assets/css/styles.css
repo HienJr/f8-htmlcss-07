@@ -561,6 +561,8 @@ body {
 }
 .subscribe-body .section-heading {
   color: #fff;
+  position: relative;
+  z-index: 1;
 }
 .subscribe-body .desc {
   margin-top: 10px;
@@ -580,6 +582,17 @@ body {
 .subscribe-decor:nth-of-type(3) {
   top: 180px;
   right: 27px;
+}
+
+.subscribe-title {
+  position: relative;
+}
+
+.subscribe-heading__decor {
+  position: absolute;
+  top: 85px;
+  left: 0;
+  z-index: 0;
 }
 
 .subscribe-form {
